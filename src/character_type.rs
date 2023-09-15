@@ -1,77 +1,76 @@
-/// Types of Bidi characters (Table 4 in the Unicode Bidi Algorithm).
-#[warn(dead_code)]
-enum CharacterType {
-    /// Left-to-Right (LTR).
-    LeftToRight,
+// /// Types of Bidi characters (Table 4 in the Unicode Bidi Algorithm).
+// enum CharacterType {
+//     /// Left-to-Right (LTR).
+//     LeftToRight,
 
-    /// Left-to-Right Embedding (LRE).
-    LeftToRightEmbedding,
+//     /// Left-to-Right Embedding (LRE).
+//     LeftToRightEmbedding,
 
-    /// Left-to-Right Override (LRO).
-    LeftToRightOverride,
+//     /// Left-to-Right Override (LRO).
+//     LeftToRightOverride,
 
-    /// Left-to-Right Isolate (LRI).
-    LeftToRightIsolate,
+//     /// Left-to-Right Isolate (LRI).
+//     LeftToRightIsolate,
 
-    /// Right-to-Left (RTL).
-    RightToLeft,
+//     /// Right-to-Left (RTL).
+//     RightToLeft,
 
-    /// Right-to-Left Embedding (RLE).
-    RightToLeftEmbedding,
+//     /// Right-to-Left Embedding (RLE).
+//     RightToLeftEmbedding,
 
-    /// Right-to-Left Override (RLO).
-    RightToLeftOverride,
+//     /// Right-to-Left Override (RLO).
+//     RightToLeftOverride,
 
-    /// Right-to-Left Isolate (RLI).
-    RightToLeftIsolate,
+//     /// Right-to-Left Isolate (RLI).
+//     RightToLeftIsolate,
 
-    /// First Strong Isolate (FSI).
-    FirstStrongIsolate,
+//     /// First Strong Isolate (FSI).
+//     FirstStrongIsolate,
 
-    /// Pop Directional Format (PDF).
-    PopDirectionalFormat,
+//     /// Pop Directional Format (PDF).
+//     PopDirectionalFormat,
 
-    /// Pop Directional Isolate (PDI).
-    PopDirectionalIsolate,
+//     /// Pop Directional Isolate (PDI).
+//     PopDirectionalIsolate,
 
-    /// European Number (EN).
-    EuropeanNumber,
+//     /// European Number (EN).
+//     EuropeanNumber,
 
-    /// European Number Separator (ES).
-    EuropeanNumberSeparator,
+//     /// European Number Separator (ES).
+//     EuropeanNumberSeparator,
 
-    /// European Number Terminator (ET).
-    EuropeanNumberTerminator,
+//     /// European Number Terminator (ET).
+//     EuropeanNumberTerminator,
 
-    /// Persian Letter (AL).
-    PersianLetter,
+//     /// Persian Letter (AL).
+//     PersianLetter,
 
-    /// Persian Number (AN).
-    PersianNumber,
+//     /// Persian Number (AN).
+//     PersianNumber,
 
-    /// Common Number Separator (CS).
-    CommonNumberSeparator,
+//     /// Common Number Separator (CS).
+//     CommonNumberSeparator,
 
-    /// NonSpacing Mark (MN).
-    NonSpacingMark,
+//     /// NonSpacing Mark (MN).
+//     NonSpacingMark,
 
-    /// Boundary Neutral (BN).
-    BoundaryNeutral,
+//     /// Boundary Neutral (BN).
+//     BoundaryNeutral,
 
-    /// Paragraph Separator (B).
-    ParagraphSeparator,
+//     /// Paragraph Separator (B).
+//     ParagraphSeparator,
 
-    /// Segment Separator (S).
-    SegmentSeparator,
+//     /// Segment Separator (S).
+//     SegmentSeparator,
 
-    /// Whitespace (WS).
-    Whitespace,
+//     /// Whitespace (WS).
+//     Whitespace,
 
-    /// Other Neutrals (ON).
-    OtherNeutrals,
-}
+//     /// Other Neutrals (ON).
+//     OtherNeutrals,
+// }
 
-#[warn(dead_code)]
-fn get_character_type(c: u16) -> CharacterType {
-    todo!();
-}
+// fn get_character_type(c: u16) -> CharacterType {
+//     let _ = c;
+//     todo!();
+// }
