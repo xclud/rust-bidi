@@ -1,4 +1,4 @@
-Implementation of the Unicode Bidi Algorithm (UBA).
+Implementation of the Unicode Bidirectional Algorithm (UBA).
 
 Reference: [http://www.unicode.org/reports/tr9/tr9-17.html](http://www.unicode.org/reports/tr9/tr9-17.html).
 

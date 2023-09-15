@@ -1,5 +1,6 @@
 [package]
 authors = ["Mahdi K. Fard"]
+description = "Implementation of the Unicode Bidirectional Algorithm (UBA)."
 edition = "2021"
 keywords = ["unicode", "bidi", "bidirectional", "text-processing"]
 license = "MIT"
