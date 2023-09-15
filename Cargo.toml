@@ -1,7 +1,7 @@
 [package]
 authors = ["Mahdi K. Fard"]
 edition = "2021"
-keywords = ["unicode", "bidi", "bidirectional", "text processing"]
+keywords = ["unicode", "bidi", "bidirectional", "text-processing"]
 license = "MIT"
 name = "bidi"
 version = "0.1.0"
