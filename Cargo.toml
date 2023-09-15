@@ -5,6 +5,7 @@ edition = "2021"
 keywords = ["unicode", "bidi", "bidirectional", "text-processing"]
 license = "MIT"
 name = "bidi"
+repository = "https://github.com/xclud/rust-bidi"
 version = "0.1.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
