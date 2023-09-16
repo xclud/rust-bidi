@@ -17,6 +17,7 @@ mod tests {
 
         let result = String::from_utf16(text_u16.as_slice()).unwrap();
         assert_eq!(result, "ﻣﻬﺪﯼ");
+        assert_eq!(text_u16, vec!['ﻣ' as u16, 'ﻬ' as u16, 'ﺪ' as u16, 'ﯼ' as u16]);
     }
 
     #[test]
