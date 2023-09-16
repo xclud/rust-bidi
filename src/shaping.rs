@@ -1,5 +1,7 @@
 /// Performs in-place character shaping of the string.
 /// Replaces each letter with it's relating initial, medial, final or isolated form.
+///
+/// Reference: http://www.unicode.org/reports/tr9/#Shaping.
 pub fn perform_shaping(text: &mut Vec<u16>) {
     let mut last_jt = ShapeJoiningType::NonJoining;
     let mut last_form = LetterForm::Isolated;
@@ -16,8 +18,8 @@ pub fn perform_shaping(text: &mut Vec<u16>) {
             || jt == ShapeJoiningType::Dual
             || jt == ShapeJoiningType::Causing)
             && (last_jt == ShapeJoiningType::Left
-            || last_jt == ShapeJoiningType::Dual
-            || last_jt == ShapeJoiningType::Causing)
+                || last_jt == ShapeJoiningType::Dual
+                || last_jt == ShapeJoiningType::Causing)
         {
             if last_form == LetterForm::Isolated
                 && (last_jt == ShapeJoiningType::Dual || last_jt == ShapeJoiningType::Left)
