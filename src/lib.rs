@@ -2,6 +2,7 @@ include!("paragraph.rs");
 include!("letter_form.rs");
 include!("shape_joining_type.rs");
 include!("shaping.rs");
+include!("canonical_class.rs");
 
 #[cfg(test)]
 mod tests {
@@ -17,7 +18,10 @@ mod tests {
 
         let result = String::from_utf16(text_u16.as_slice()).unwrap();
         assert_eq!(result, "ﻣﻬﺪﯼ");
-        assert_eq!(text_u16, vec!['ﻣ' as u16, 'ﻬ' as u16, 'ﺪ' as u16, 'ﯼ' as u16]);
+        assert_eq!(
+            text_u16,
+            vec!['ﻣ' as u16, 'ﻬ' as u16, 'ﺪ' as u16, 'ﯼ' as u16]
+        );
     }
 
     #[test]
@@ -30,5 +34,13 @@ mod tests {
 
         assert_eq!(paragraphs.len(), 2);
         assert_eq!(paragraphs[0].text, vec![84, 119, 111]);
+    }
+
+    #[test]
+    /// Canonical class test.
+    fn canonical() {
+        let class = get_canonical_class(2748);
+
+        assert_eq!(class, CanonicalClass::Nuktas);
     }
 }
