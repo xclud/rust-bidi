@@ -30,3 +30,7 @@ fn paragraph() {
     assert_eq!(paragraphs[0].text, vec![84, 119, 111]);
 }
 ```
+
+## Other Implementations
+
+This package is also written in Dart (apart from this package, which is written in Rust). If you are looking for a pure Dart implementation of this package, look at [https://pub.dev/packages/bidi/](https://pub.dev/packages/bidi/).
